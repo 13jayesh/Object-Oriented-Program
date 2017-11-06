@@ -80,11 +80,11 @@ public class test {
 		System.out.println("Enter value to be found");
 		String value=sc.next();
 		for(int i=0;i<=array.size();i++){
-			JSONObject fina=(JSONObject) array.get(i);
-		if(fina.get("Name").equals(value))
+			JSONObject comobject=(JSONObject) array.get(i);
+		if(comobject.get("Name").equals(value))
 		{
-			long price=(long) fina.get("price");
-			long waight=(long)fina.get("waight");
+			long price=(long) comobject.get("price");
+			long waight=(long)comobject.get("waight");
 			long totalval=(price*waight);
 			System.out.println(totalval);
 			break;
